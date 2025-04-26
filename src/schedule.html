@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailed Work Schedule Calendar</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.4;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      /* Added rounded corners */
+      overflow: hidden;
+      /* Ensures rounded corners clip content */
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      /* Increased padding */
+      text-align: left;
+      vertical-align: top;
+      /* Align content to top */
+      min-height: 80px;
+      /* Ensure cells have a minimum height */
+      position: relative;
+      /* Needed for potential absolute positioning */
+    }
+
+    th {
+      background-color: #007bff;
+      /* Updated header background */
+      color: white;
+      /* Header text color */
+      font-weight: bold;
+      text-transform: uppercase;
+      /* Uppercase day names */
+      font-size: 0.9em;
+      /* Slightly smaller header font */
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+      /* Zebra striping for rows */
+    }
+
+    .day-number {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      /* Space below day number */
+      display: block;
+      /* Make day number a block element */
+      text-align: right;
+      /* Align day number to the right */
+      color: #555;
+      /* Darker color for day number */
+    }
+
+    .schedule-item {
+      font-size: 0.9em;
+      color: #333;
+      margin-bottom: 3px;
+      /* Space between schedule items */
+      padding: 2px 5px;
+      /* Add padding to schedule items */
+      border-radius: 3px;
+      /* Rounded corners for schedule items */
+      display: block;
+      /* Each item on a new line */
+    }
+
+    /* Color Coding */
+    .priority-all-day {
+      background-color: #138496;
+      /* Dark blue for priority */
+      color: white;
+    }
+
+    .priority-all-day .day-number {
+      color: white;
+      /* Ensure day number is white on dark background */
+    }
+
+    .all-day {
+      background-color: #c82333;
+      /* Red for all day */
+      color: white;
+    }
+
+    .all-day .day-number {
+      color: white;
+    }
+
+    .morning-afternoon {
+      background-color: #218838;
+      /* Green for morning/afternoon */
+      color: white;
+    }
+
+    .morning-afternoon .day-number {
+      color: white;
+    }
+
+    .evening {
+      background-color: #e0a800;
+      /* Orange for evening */
+      color: white;
+    }
+
+    .evening .day-number {
+      color: white;
+    }
+
+    .work-hours {
+      background-color: #138496;
+      /* Teal for standard work hours */
+      color: white;
+    }
+
+    .work-hours .day-number {
+      color: white;
+    }
+
+    .no-work {
+      color: #28a745;
+      /* Green text for no work */
+      font-weight: bold;
+    }
+
+    .empty-day {
+      background-color: #eee;
+      /* Light grey for empty days */
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>My Work Schedule Calendar (April 28 - May 21, 2025)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="empty-day">
+          <span class="day-number">27</span>
+        </td>
+        <td>
+          <span class="day-number">28</span>
+          <span class="schedule-item morning-afternoon">Morning:<br> C7 Ranges <br>7:45
+            @Parade Square</span>
+          <span class="schedule-item evening">Evening: <br>Sunset Practice</span>
+        </td>
+        <td>
+          <span class="day-number">29</span>
+          <span class="schedule-item morning-afternoon">Morning: <br>C7 Ranges (6:45 meet)</span>
+          <span class="schedule-item morning-afternoon">Afternoon:<br> C7 Ranges </span>
+          <span class="schedule-item evening">Evening:<br> Sunset Practice</span>
+        </td>
+        <td>
+          <span class="day-number">30</span>
+          <span class="schedule-item evening">Evening:<br> Sunset Practice</span>
+        </td>
+        <td>
+          <span class="day-number">1</span>
+          <span class="schedule-item evening">Evening:<br> Sunset Practice</span>
+        </td>        
+        <td class="empty-day"><span class="day-number">2</span></td>
+        <td class="empty-day"><span class="day-number">3</span></td>
+      </tr>
+      <tr>
+        <td class="empty-day"><span class="day-number">4</span></td>
+        <td class="priority-all-day">
+          <span class="day-number">5</span>
+          <span class="schedule-item">Engineering Tour <br>Bus @ 5:45am</span>
+        </td>
+        <td class="priority-all-day">
+          <span class="day-number">6</span>
+          <span class="schedule-item eng-tour">Engineering Tour</span>
+        </td>
+        <td class="priority-all-day">
+          <span class="day-number">7</span>
+          <span class="schedule-item">Engineering Tour</span>
+        </td>
+        <td>
+          <span class="day-number">8</span>
+          <span class="schedule-item evening">Evening:<br>Sunset Practice</span>
+        </td>
+        <td class="empty-day"><span class="day-number">9</span></td>
+        <td class="empty-day"><span class="day-number">10</span></td>
+      </tr>
+      <tr>
+        <td class="empty-day"><span class="day-number">11</span></td>
+        <td>
+          <span class="day-number">12</span>
+          <span class="schedule-item evening">Evening: Sunset Practice</span>
+        </td>
+        <td>
+          <span class="day-number">13</span>
+          <span class="schedule-item all-day">Morning: <br>Grad Parade Rehearsal</span>
+          <span class="schedule-item all-day">Evening: Sunset Rehearsal</span>
+        </td>
+        <td><span class="day-number">14</span></td>
+        <td>
+          <span class="day-number">15</span>
+          <span class="schedule-item all-day">Afternoon & Evening: Sunset Ceremony</span>
+        </td>
+        <td>
+          <span class="day-number">16</span>
+          <span class="schedule-item all-day">Morning & Afternoon: Graduation Parade</span>
+          <span class="schedule-item no-work">Leave RMC</span>
+        </td>
+        <td class="empty-day">
+          <span class="day-number">17</span>
+          <span class="day-number"></span> 
+        </td>
+      </tr>
+      <tr>
+        <td class="empty-day">
+          <span class="day-number">18</span>
+        </td>
+        <td>
+          <span class="day-number">19</span>
+          <span class="schedule-item no-work">Begin OJE</span>
+          <span class="schedule-item work-hours">Work (8am-4pm)</span>
+        </td>
+        <td>
+          <span class="day-number">20</span>
+          <span class="schedule-item work-hours">Work (8am-4pm)</span>
+        </td>
+        <td>
+          <span class="day-number">21</span>
+          <span class="schedule-item work-hours">Work (8am-4pm)</span>
+        </td>
+        <td class="empty-day"></td>
+        <td class="empty-day"></td>
+        <td class="empty-day"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Note: Schedule details are based on the information provided for April 28 - May 21, 2025. Schedule is assumed 8am-4pm starting May 20th. Schedule is unknown after May 21st based on the provided details.</p>
+
+</body>
+
+</html>
