@@ -22,9 +22,8 @@ const GiftListPage = () => {
           overflow: "hidden",
           boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
         }}
-      >
         <iframe
-          src="https://u.cave.su/p/u98j75-SuaWDg5QwBZp1?showControls=false&showChat=true&showLineNumbers=true&useMonospaceFont=false"
+          src="https://glowdocs.com/p/vdppsdu3r5yltecpi937?showControls=false&showChat=true&showLineNumbers=true&useMonospaceFont=false"
           width="100%"
           height="80vh"
           style={{ border: "none" }}
