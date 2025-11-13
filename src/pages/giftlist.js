@@ -25,7 +25,7 @@ const GiftListPage = () => {
         <iframe
           src="https://glowdocs.com/p/vdppsdu3r5yltecpi937?showControls=false&showChat=true&showLineNumbers=true&useMonospaceFont=false"
           width="100%"
-          height="80vh"
+          height="600"
           style={{ border: "none" }}
           title="Gift List"
         ></iframe>
