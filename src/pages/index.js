@@ -31,6 +31,8 @@ function Index() {
       </h2>
       <p>
            Check out my <a href="https://runninggazelle.ca/schedule.html">schedule</a>
+            <br/>           
+            Check out my <a href="https://runninggazelle.ca/giftlist">Gift List</a>
             <br/>
         <a
           href="https://github.com/vercel/vercel/tree/master/examples/gatsby"
