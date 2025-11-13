@@ -8,7 +8,6 @@ const GiftListPage = () => {
       <nav style={{ marginBottom: "1rem", fontSize: "0.9rem" }}>
         <Link to="/" style={{ textDecoration: "none", color: "#0070f3" }}>Home</Link>
         <span style={{ margin: "0 0.5rem" }}>→</span>
-        <span style={{ color: "#555" }}>Gift List</span>
       </nav>
 
       {/* Page header */}
