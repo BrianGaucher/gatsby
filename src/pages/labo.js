@@ -3,12 +3,12 @@ import { Link } from "gatsby";
 
 const GiftListPage = () => {
   return (
-    <div style={{ maxWidth: 900, margin: "2rem auto", fontFamily: "sans-serif" }}>
+    <div style={{ maxWidth: 100%, margin: 0, fontFamily: "sans-serif" }}>
       {/* Breadcrumb navigation */}
       <nav style={{ marginBottom: "1rem", fontSize: "0.9rem" }}>
         <Link to="/" style={{ textDecoration: "none", color: "#0070f3" }}>Home</Link>
         <span style={{ margin: "0 0.5rem" }}>→</span>
-        <span style={{ color: "#555" }}>Gift List</span>
+        <span style={{ color: "#555" }}>Labo</span>
       </nav>
 
       {/* Embedded Etherpad */}
@@ -23,7 +23,7 @@ const GiftListPage = () => {
       >
         <iframe
           name="embed_readwrite"
-          src="https://glowdocs.com/p/tgzisclkrs8f8ohnpg4y?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=true"
+          src="https://glowdocs.com/p/tgzisclkrs8f8ohnpg4y?showControls=false&showChat=true&showLineNumbers=true&useMonospaceFont=true"
           width="100%"
           height="100%"
           frameBorder="0"
