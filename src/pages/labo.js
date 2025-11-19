@@ -11,24 +11,24 @@ const GiftListPage = () => {
         <span style={{ color: "#555" }}>Gift List</span>
       </nav>
 
-{/* Embedded Etherpad */}
-<div
-  style={{
-    border: "1px solid #ccc",
-    borderRadius: "8px",
-    overflow: "hidden",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    height: "90vh", // <- add this so container has height
-  }} // <-- make sure this closes here with }
-> 
-<iframe 
-    name="embed_readwrite" 
-    src="https://glowdocs.com/p/tgzisclkrs8f8ohnpg4y?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=true" 
-    width="100%" 
-    height="600" 
-    frameborder="0">
-</div>
-
+      {/* Embedded Etherpad */}
+      <div
+        style={{
+          border: "1px solid #ccc",
+          borderRadius: "8px",
+          overflow: "hidden",
+          boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+          height: "90vh",
+        }}
+      >
+        <iframe
+          name="embed_readwrite"
+          src="https://glowdocs.com/p/tgzisclkrs8f8ohnpg4y?showControls=true&showChat=true&showLineNumbers=true&useMonospaceFont=true"
+          width="100%"
+          height="100%"
+          frameBorder="0"
+        />
+      </div>
     </div>
   );
 };
